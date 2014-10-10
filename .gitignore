@@ -1,0 +1,7 @@
+build/
+.coverage
+*.egg-info/
+__pycache__
+*.swp
+venv
+.venv
