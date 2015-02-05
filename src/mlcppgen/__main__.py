@@ -54,7 +54,7 @@ def templatefy(strings):
     return dedent('''\
     template <>
     EXPORT_DLL std::string _("{0}")
-    {{ return fromUTF8("{1}"); }}''').format(original, translated)
+    {{ return "{1}"; }}''').format(original, translated)
 
 
 def templatefy_file(translation_file, fallback):

@@ -23,31 +23,31 @@ FILES = {'complete': dedent('''\
 EXPECTEDS = {'complete': dedent('''\
              template <>
              EXPORT_DLL std::string _("Test string.")
-             { return fromUTF8("String de teste."); }
+             { return "String de teste."; }
 
              template <>
              EXPORT_DLL std::string _("Another test.")
-             { return fromUTF8("Outro teste."); }
+             { return "Outro teste."; }
 
              template <>
              EXPORT_DLL std::string _("Yet another.")
-             { return fromUTF8("Ainda outra."); }
+             { return "Ainda outra."; }
 
              template <>
              EXPORT_DLL std::string _("Terrible \\"corner case\\".")
-             { return fromUTF8("Terrível \\"caso obscuro\\"."); }'''),
+             { return "Terrível \\"caso obscuro\\"."; }'''),
              'italian': dedent('''\
              template <>
              EXPORT_DLL std::string _("Test string.")
-             { return fromUTF8("String di prova."); }
+             { return "String di prova."; }
 
              template <>
              EXPORT_DLL std::string _("Another test.")
-             { return fromUTF8("Outro teste."); }
+             { return "Outro teste."; }
 
              template <>
              EXPORT_DLL std::string _("Yet another.")
-             { return fromUTF8("Ancora un'altra."); }''')}
+             { return "Ancora un'altra."; }''')}
 
 
 def expected(s):
