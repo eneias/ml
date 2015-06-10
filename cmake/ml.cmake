@@ -19,6 +19,10 @@ macro(ML2PO)
     execute_process(COMMAND python -m ml2po ${ARGN} RESULT_VARIABLE ML2PO_RESULT)
 endmacro()
 
+macro(VALIDATETRA)
+    execute_process(COMMAND python -m validateTra ${ARGN} RESULT_VARIABLE VALIDATETRA_RESULT)
+endmacro()
+
 macro(PO2ML)
     execute_process(COMMAND python -m po2ml ${ARGN} RESULT_VARIABLE PO2ML_RESULT)
 endmacro()

@@ -12,6 +12,9 @@ win32_executables = [Executable('src/ml2po/__main__.py',
                      Executable('src/mlpp/__main__.py',
                                 base=None,
                                 targetName="mlpp.exe"),
+                     Executable('src/validateTra/__main__.py',
+                                base=None,
+                                targetName="validateTra.exe"),
                      ]
 
 setup(
@@ -24,7 +27,8 @@ setup(
         'mlpp',
         'mlcppgen',
         'ml2po',
-        'po2ml'
+        'po2ml',
+        'validateTra'
     ],
     executables=win32_executables,
 )
